@@ -9,14 +9,12 @@
 </head>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="screen and (max-width:800px)" href="css/phone.css">
 <style>
     /* css reset */
     body{
         font-family: 'Baloo Bhai 2', cursive;
         color: honeydew;
-        margin: 0px;
-        padding: 0px;
         background: url(img/bg2.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -24,99 +22,13 @@
         background-size: cover;
         /* height: 434px; */
     }
-    .left{
-        display: inline-block;
-        /* border: 2px solid red; */
-        left: 34px;
-        top: 20px;
-        
-    }
-    .left img{
-        width: 219px;
-        height: 114px;
-        filter: invert(300%);
-        
-    }
-    .left div{
-        text-align: center;
-        font-size: 31px;
-        margin: -36px;
-    }
-    .left div:hover{
-        color: rgb(60, 248, 75);
-        /* border: 2px solid rgb(240, 245, 240); */
-        /* border-radius: 20px; */
-        cursor: pointer;
-    }
-    .nav{
-        display: inline-block;
-    }
-    .nav li{
-        display: inline-block;
-        font-size: 25px;
-        
-    }
-    .nav li a{
-        color: white;
-        text-decoration: none;
-        padding: 34px 23px;
-       
-    }
-    .nav li a:hover,.nav li {
-        /* color: white; */
-        /* text-decoration: underline; */
-        /* .nav li a:hover ,.nav li a.active */
-        color: rgb(255, 77, 32);
-        /* padding: 34px 23px; */
-    }
-    .mid{
-        display: block;
-        width: 49%;
-        margin: -137px 286px;
-        /* border: 2px solid green; */
-        
-    }
-    .right{
-        display: inline-block;
-        position: absolute;
-        right: 34px;
-        top: 1px;
-        /* border: 2px solid gold; */
-    }
-    .btn{
-        font-family: 'Baloo Bhai 2', cursive;
-        margin: 0px 9px;
-        background-color: black;
-        color:white;
-        padding: 4px 14px;
-        /* border: 2px solid green; */
-        /* border-radius: 10px; */
-        font-size: 20px;
-        cursor: pointer;
 
-   }
-   .btn:hover{
-       background-color: rgb(49, 245, 49);
-   }
-   .bttn{ font-family: 'Baloo Bhai 2', cursive;
-        margin: 8px 100px;
-        background-color: black;
-        color:white;
-        padding: 4px 14px;
-        /* border: 2px solid green; */
-        /* border-radius: 10px; */
-        font-size: 25px;
-        cursor: pointer;
 
-   }
-   .bttn:hover{
-    background-color: rgb(49, 245, 49);
-   }
    .container{
        /* border: 2px solid gold; */
-       margin: 228px;
-       padding: 25px;
-       width: 22%;
+       margin: 72px;
+       padding: 2px;
+       width: 32%;
        height: 452px;
        /* border-radius: 27px; */
 
@@ -139,53 +51,75 @@
 
    }
    .optxt:hover{
-       /* background-color: rgba(22, 89, 233, 0.699); */
-       /* text-decoration: rgb(26, 236, 72); */
-       /* cursor: pointer; */
        color: rgb(26, 236, 72);
    }
 </style>
 <body>
-    <header class="header">
-        <!-- left box for logo -->
-        <div class="left">
-            <img src="img/logo2.png" alt="">
-            <div>MK Trainer's</div>
-        </div>
-        <!-- mid box for navigation -->
-        <div class="mid">
-            <ul class="nav">
-                <li> <a href="#" class="active">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Fitness calcualtor</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
-        <!-- right for some buttons -->
-        <div class="right">
-            <button class="btn">Call us now</button>
-            <button class="btn">Email us</button>
-        </div>
-    </header>
-    <div class="container">
-        <h1 class="optxt">Join the best gym of karnal</h1>
-        <form action="noaction.php">
-            <div class="from-group">
-                <input type="text" name="" placeholder="Enter your name">
-            </div>
-            <div class="from-group">
-                <input type="text" name="" placeholder="Enter your age">
-            </div>
-            <div class="from-group">
-                <input type="text" name="" placeholder="Enter your gender">
-            </div>
-            <div class="from-group">
-                <input type="text" name="" placeholder="Enter your email">
-            </div>
-            <button class="bttn">Join Us</button>
 
-        </form>
+ 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo2.png" alt="" width="40" height="64" class="d-inline-block align-text-top">
+                    AllFit
+                  </a>
+              
+              <ul class="nav justify-content ">
+                <li class="nav-item ">
+                  <a class="nav-link text-light" href="#">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Fitness Check</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Book now</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+
+    <div class="container">
+        <h1 class="optxt">Join the best gym of karnal</h1> <br><br>
+        <form class="row g-3">
+            <div class="col-12 ">
+                <input type="text" class="form-control container-fluid" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Gender" aria-label="Gender">
+              </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label"></label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label"></label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Enter you address">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label"></label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Enter city">
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label"></label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Enter state">
+            </div>
+            <div class="col-md-6">
+              <label for="inputZip" class="form-label"></label>
+              <input type="text" class="form-control" id="inputZip" placeholder="Enter pincode">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Join Us</button>
+            </div>
+          </form>
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
